@@ -45,7 +45,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "vkbotsthalpathy")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'smthing_else)
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'smthing_else')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
