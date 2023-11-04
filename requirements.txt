@@ -12,6 +12,7 @@ pyrogram>=2.0.30
  pytz 
  aiohttp
  countryinfo
+asyncio
 
 #---master---# 
  #Telethroid==0.0.10 
