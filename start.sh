@@ -9,4 +9,4 @@ fi
 cd /RenierbXFilTeR-BoT
 pip3 install -U -r requirements.txt
 echo "Starting RenierbX...."
-python -m RenierbX
+python3 bot.py
