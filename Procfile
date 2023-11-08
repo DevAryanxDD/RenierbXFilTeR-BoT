@@ -1,1 +1,1 @@
-web: python -m RenierbX
+web: python3 bot.py
