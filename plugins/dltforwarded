@@ -1,0 +1,20 @@
+from telegram import Update
+from telegram.ext import Updater, MessageHandler, Filters
+import logging
+
+# Set up logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+
+# Replace 'YOUR_BOT_TOKEN' with your actual bot token
+bot_token = '6308186715:AAEiguz4NI-rGpwdE4nrX9jrGT8wKqZW7k4'
+updater = Updater(bot_token, use_context=True)
+
+def delete_forwarded_messages(update: Update, context):
+    message = update.message
+
+    # Check if the message is forwarded
+    if message.forward_from is not None:
+        message.delete()
+
+# Set up the message handler
+updater.dispatcher.add_handler(MessageHandler(Filters.all & ~(Filters.command | Filters.status_update), delete_forwarded_messages))
