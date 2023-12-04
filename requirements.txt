@@ -6,13 +6,17 @@ pyrogram>=2.0.30
  umongo==3.0.1 
  requests 
  bs4 
+countryinfo
+telebot
+python-telegram-bot
+validators==0.18.0
+schedule
+
  git+https://github.com/Joelkb/cinemagoer 
  shortzy 
  datetime 
  pytz 
  aiohttp
- countryinfo
-asyncio
 
 #---master---# 
  #Telethroid==0.0.10 
@@ -58,7 +62,4 @@ pyshorteners
 pyromod
 colorama
 openai==0.25.0
-
-
-
-  
+hachoir
